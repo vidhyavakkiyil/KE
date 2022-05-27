@@ -19,7 +19,12 @@ header a {
   color: white;
   font-size: large;
 }
-.products {
+.product_item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: baseline;
+}
+.products_detail {
   display: flex;
   flex-wrap: wrap;
   justify-content: baseline;
@@ -33,5 +38,12 @@ header a {
   height: 200px;
 }
 .product_text {
-  padding-left: 2rem;
+  padding-left: 1rem;
+}
+.product_detail_text {
+  padding-left: 10rem;
+}
+.product_detail_img {
+  width: 400px;
+  height: 400px;
 }
