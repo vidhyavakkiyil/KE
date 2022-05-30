@@ -7,9 +7,9 @@ function HomeScreen() {
   const [product, setproduct] = useState([]);
 
   const fetchdata = async () => {
-    const result = await axios.get("/api/products");
+    const result = await axios.get("/api/seed");
     console.log(result);
-    setproduct(result.data);
+    setproduct(result.data.CreateProduct);
   };
   useEffect(() => {
     fetchdata();
